@@ -3,7 +3,7 @@ name: Download
 on: 
   push:
     branches: 
-      - _master # build master branch only
+      - master # build master branch only
 
 jobs:
   download:
