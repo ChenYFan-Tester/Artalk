@@ -1,4 +1,4 @@
-name: Download
+name: Build
 
 on: 
   push:
@@ -25,3 +25,8 @@ jobs:
       with:
         github_token: ${{ secrets.TOKEN }}
         publish_dir: ./dist
+    - name: purge
+      run: |
+        curl https://purge.jsdelivr.net/gh/ChenYFan-Tester/Artalk@gh-pages/Artalk.js
+        curl https://purge.jsdelivr.net/gh/ChenYFan-Tester/Artalk@gh-pages/Artalk.css
+
