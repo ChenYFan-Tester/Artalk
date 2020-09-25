@@ -23,8 +23,8 @@
         <div class="artalk-content<%= !!data.is_collapsed ? ' artalk-hide artalk-type-collapsed' : '' %>"><%- getContentMarked() %></div>
         <% if(!!data.is_collapsed) { %>
         <div class="artalk-collapsed">
-          <span class="artalk-text">该评论已被系统或管理员折叠</span>
-          <span class="artalk-show-btn">查看内容</span>
+          <span class="artalk-text">杰...杰哥你干嘛？</span>
+          <span class="artalk-show-btn">让我康康！</span>
         </div>
         <% } %>
       </div>
@@ -32,7 +32,7 @@
         <div class="artalk-comment-actions">
           <% if(data.is_allow_reply !== false) { %><span data-comment-action="reply">回复</span><% } %>
           <span data-comment-action="collapse" class="artalk-hide" data-list-ui-only-admin>
-            <%= !!data.is_collapsed ? '取消折叠' : '折叠' %>
+            <%= !!data.is_collapsed ? '给看！' : '不给看！' %>
           </span>
           <span data-comment-action="delete" class="artalk-hide" data-list-ui-only-admin>删除</span>
         </div>
