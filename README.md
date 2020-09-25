@@ -2,7 +2,7 @@
 <img src="./docs/banner.png" alt="Artalk" width="200">
 </p>
 
-# [Artalk](https://artalk.js.org)
+# [Artalk-ChenYFanTester](https://artalk.js.org)
 > 一款简洁有趣的自托管评论系统
 
 [![](https://img.shields.io/npm/v/artalk.svg?style=flat-square)](https://www.npmjs.com/package/artalk)
