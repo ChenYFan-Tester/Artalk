@@ -1,0 +1,27 @@
+name: Download
+
+on: 
+  push:
+    branches: 
+      - _master # build master branch only
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        ref: master
+
+    - name: build
+      run: |
+        yarn install
+        yarn run build
+        
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.TOKEN }}
+        publish_dir: ./dist
