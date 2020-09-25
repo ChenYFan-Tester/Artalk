@@ -15,8 +15,8 @@ import { ArtalkConfig } from '~/types/artalk-config'
 
 const defaultOpts: ArtalkConfig = {
   el: '',
-  placeholder: '来啊，快活啊 ( ゜- ゜)',
-  noComment: '快来成为第一个评论的人吧~',
+  placeholder: '开车不规范，亲人两行泪(´இ皿இ｀)',
+  noComment: '沙发！（╯‵□′）╯︵┴─┴',
   sendBtn: '发送评论',
   defaultAvatar: 'mp',
   pageKey: '',
@@ -154,7 +154,7 @@ export default class Artalk {
     Object.keys(data).forEach(key => formData.set(key, data[key]))
 
     const xhr = new XMLHttpRequest()
-    xhr.timeout = 5000
+    xhr.timeout = 60000
     xhr.open('POST', this.conf.serverUrl, true)
 
     xhr.onload = () => {
