@@ -7,7 +7,7 @@
         <% var content = item['container'][name]; %>
         <span class="artalk-emoticons-item" title="<%- name %>" data-content="<%= content %>">
           <% if (item['inputType'] === 'image') { %>
-            <img src="<%= content %>" alt="<%- name %>" />
+            <img src="<%= content %>" srcset="https://cdn.jsdelivr.net/gh/ChenYFan/blog@master/themes/fluid/source/img/loading.gif" alt="<%- name %>" />
           <% } else { %>
             <%= content %>
           <% } %>
